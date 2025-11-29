@@ -1,0 +1,2 @@
+pnpm install prisma @types/node @types/pg --save-dev
+pnpm install @prisma/client @prisma/adapter-pg pg dotenv

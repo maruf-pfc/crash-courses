@@ -1,0 +1,14 @@
+services:
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+
+# docker compose -f pgadmin.yaml up -d
+# psql postgres://root:root@localhost:5433/prisma
+# psql -h localhost -p 5433 -U root -d prisma
+# Password: root
