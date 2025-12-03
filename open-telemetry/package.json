@@ -1,0 +1,33 @@
+{
+  "name": "open-telemetry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "OTEL_SERVICE_NAME=my-express-2 OTEL_EXPORTER_OTLP_ENDPOINT=http://31.97.206.6:4318 OTEL_EXPORTER_OTLP_LOGS_ENDPOINT=http://31.97.206.6:4318/v1/logs node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.18.3",
+  "dependencies": {
+    "@opentelemetry/api-logs": "^0.208.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.67.2",
+    "@opentelemetry/exporter-logs-otlp-http": "^0.208.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.208.0",
+    "@opentelemetry/instrumentation-winston": "^0.53.0",
+    "@opentelemetry/resources": "^2.2.0",
+    "@opentelemetry/sdk-logs": "^0.208.0",
+    "@opentelemetry/sdk-node": "^0.208.0",
+    "@opentelemetry/sdk-trace-base": "^2.2.0",
+    "@opentelemetry/semantic-conventions": "^1.38.0",
+    "@opentelemetry/winston-transport": "^0.19.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "winston": "^3.18.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.10.1"
+  }
+}
